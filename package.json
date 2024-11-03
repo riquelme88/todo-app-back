@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "node --import=tsx --watch --env-file=.env ./src/server.ts",
     "build": "tsc",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "vercel-build": "npx prisma generate"
   },
   "author": "",
   "license": "ISC",
