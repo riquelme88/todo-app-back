@@ -5,8 +5,8 @@ import { middleware } from "../middleware/authMiddleware";
 
 export const router = Router()
 
-router.get('/ping', (req, res) => {
-    res.json({ pong: true })
+router.get('/', (req, res) => {
+    res.json({ hello: 'hello' })
 })
 
 router.post('/register', authController.registerUser as RequestHandler)
